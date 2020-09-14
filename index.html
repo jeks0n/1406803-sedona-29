@@ -1,12 +1,147 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+<header>
+  <nav>
+    <a>
+      <img src="img/logo.svg" width="138" height="70" alt="Город Седона">
+    </a>
+    <ul>
+      <li><a href="">ИНФОРМАЦИЯ</a></li>
+      <li><a href="">ФОТО И ВИДЕО</a></li>
+      <li><a href="">КАРТА ШТАТА</a></li>
+      <li><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+  <h1>АРЕНДА ЖИЛЬЯ И НЕДВИЖИМОСТИ В СЕДОНЕ</h1>
 
-  </body>
+  <section>
+    <h2>ПРИВЕТСТВИЕ</h2>
+    <img src="img/welcome.png" alt="Добро пожаловать в великолепную Седону!" width="1200" height="509">
+  </section>
+
+  <section>
+    <h2>ПРЕИМУЩЕСТВА АРЕНДЫ В СЕДОНЕ</h2>
+    <p>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
+    <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+    <ul>
+      <li>
+        <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
+        - №1 -
+        <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
+        <img src="img/sedona-afternoon.png" alt="Седона днём" width="800" height="256">
+      </li>
+      <li>
+        <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+        - №2 -
+        <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+        <img src="img/sedona-bridge.png" alt="Седонский мост" width="800" height="256">
+      </li>
+      <li>
+        <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+        - №3 -
+        <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+      </li>
+      <li>
+        <h3>КРАСИВАЯ ДОРОГА</h3>
+        - №4 -
+        <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+      </li>
+      <li>
+        <h3>МАЛО ТУРИСТОВ</h3>
+        - №5 -
+        <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>РЕКОМЕНДАЦИИ</h2>
+    <ul>
+      <li>
+        <h3>ЖИЛЬЁ</h3>
+        <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
+        <img src="img/location.svg" alt="Жильё" width="75" height="72">
+      </li>
+      <li>
+        <h3>ЕДА</h3>
+        <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+        <img src="img/food.svg" alt="Еда" width="75" height="70">
+      </li>
+      <li>
+        <h3>СУВЕНИРЫ</h3>
+        <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+        <img src="img/souvenir.svg" alt="Сувенир" width="64" height="77">
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+    <p>ЗАИНТЕРЕСОВАЛИСЬ?</p>
+    <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>
+    И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
+    </p>
+    <form action="#" method="get">
+      <p>
+        <label for="arrival-date">ДАТА ЗАЕЗДА:</label>
+        <input type="date" id="arrival-date" value="2017-04-24">
+      </p>
+      <p>
+        <label for="date-of-departure">ДАТА ВЫЕЗДА:</label>
+        <input type="date" id="date-of-departure" value="2017-07-04">
+      </p>
+      <p>
+        <label for="adults">ВЗРОСЛЫЕ:</label>
+        <input type="number" id="adults" name="adults" value="2">
+        <label for="childrens">ДЕТИ:</label>
+        <input type="number" id="childrens" name="childrens" value="0">
+      </p>
+      <button type="submit">НАЙТИ</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>НАШИ КОНТАКТЫ</h2>
+    <div name="map" id="map"></div>
+  </section>
+
+</main>
+<footer>
+  <section>
+    <h2>КОНТАКТЫ</h2>
+    <p>
+      #VISITSEDONA<br>
+      ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a>
+    </p>
+  </section>
+  <section>
+    <h2>МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h2>
+    <ul>
+      <li>
+        <a href="#">Твиттер</a>
+      </li>
+      <li>
+        <a href="#">Фейсбук</a>
+      </li>
+      <li>
+        <a href="#">Ютуб</a>
+      </li>
+    </ul>
+  </section>
+  <p>
+    WEBSITE BY:
+    <a href="https://htmlacademy.ru">
+      <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Академии">
+    </a>
+  </p>
+</footer>
+</body>
 </html>
