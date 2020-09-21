@@ -1,153 +1,171 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Отели в Седоне</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body inner-page">
 
-<header>
-  <nav>
-    <a href="index.html">
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo" href="index.html">
       <img src="img/logo.svg" width="138" height="70" alt="Город Седона">
     </a>
-    <ul>
-      <li>
-        <a href="">Информация</a>
-      </li>
-      <li>
-        <a href="">Фото и видео</a>
-      </li>
-      <li>
-        <a href="">Карта штата</a>
-      </li>
-      <li>
-        <a>Гостиницы</a>
-      </li>
-    </ul>
+    <div class="main-navigation-wrapper">
+      <div class="container">
+        <ul class="site-navigation">
+          <li>
+            <a href="">Информация</a>
+          </li>
+          <li>
+            <a href="">Фото и видео</a>
+          </li>
+          <li>
+            <a href="">Карта штата</a>
+          </li>
+          <li>
+            <a>Гостиницы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </header>
 
-<main>
-  <h1>Поиск жилья в седоне</h1>
+<main class="container">
+  <h1 class="visually-hidden">Поиск жилья в седоне</h1>
 
-  <section>
-    <h2>Фильтр жилья</h2>
+  <section class="filters">
+    <h2 class="visually-hidden">Фильтр жилья</h2>
     <!--Здесь будет форма фильтра-->
   </section>
 
-  <section>
-    <h2>Сортировка жилья</h2>
-    <p>Найдено:
+  <section class="sort">
+    <h2 class="visually-hidden">Сортировка жилья</h2>
+    <p class="sort-text-main">Найдено:
       <output>3</output>
-      Сортировка:
+      <span>Сортировка:</span>
     </p>
-    <ul>
-      <li>
-        <a>По цене</a>
-      </li>
-      <li>
-        <a href="">По типу</a>
-      </li>
-      <li>
-        <a href="">По рейтингу</a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <a>
-          <img src="img/ascend.svg" width="11" height="10" alt="По возрастанию">
-        </a>
-      </li>
-      <li>
-        <a>
-          <img src="img/descend.svg" width="11" height="10" alt="По убыванию">
-        </a>
-      </li>
-    </ul>
+    <div class="main-sort-wrapper">
+      <div class="container">
+        <ul class="sort-list">
+          <li class="sort-item">
+            <a>По цене</a>
+          </li>
+          <li class="sort-item">
+            <a href="">По типу</a>
+          </li>
+          <li class="sort-item">
+            <a href="">По рейтингу</a>
+          </li>
+        </ul>
+        <ul class="sort-type-list">
+          <li class="sort-type-item">
+            <a>
+              <img src="img/ascend.svg" width="11" height="10" alt="По возрастанию">
+            </a>
+          </li>
+          <li class="sort-type-item">
+            <a>
+              <img src="img/descend.svg" width="11" height="10" alt="По убыванию">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Список жилья</h2>
-    <ul>
-      <li>
+  <section class="catalog">
+    <h2 class="visually-hidden">Список жилья</h2>
+    <ul class="catalog-list">
+      <li class="catalog-item">
         <a href="">
           <h3>Amara Resort & Spa</h3>
         </a>
-        <a href="">
+        <a class="catalog-item-image" href="">
           <img src="img/hotel-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
         </a>
-        <p>Гостиница</p>
-        <p>От 4000 р.</p>
+        <p class="catalog-item-type">Гостиница</p>
+        <p class="catalog-item-price">От 4000 р.</p>
         <p>
-          <a href="">Подробнее</a>
-          <a href="">Забронировать</a>
+          <a class="button button-detail" href="">Подробнее</a>
+          <a class="button button-booking" href="">Забронировать</a>
         </p>
         <p>4 звезды</p>
-        <p>Рейтинг: 8,5</p>
+        <p class="catalog-item-rate">Рейтинг: 8,5</p>
       </li>
-      <li>
+      <li class="catalog-item">
         <a href="">
           <h3>Desert Quail Inn</h3>
         </a>
-        <a href="">
+        <a class="catalog-item-image" href="">
           <img src="img/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn">
         </a>
-        <p>Мотель</p>
-        <p>От 3000 р.</p>
+        <p class="catalog-item-type">Мотель</p>
+        <p class="catalog-item-price">От 3000 р.</p>
         <p>
-          <a href="">Подробнее</a>
-          <a href="">Забронировать</a>
+          <a class="button button-detail" href="">Подробнее</a>
+          <a class="button button-booking" href="">Забронировать</a>
         </p>
         <p>3 звезды</p>
-        <p>Рейтинг: 8,9</p>
+        <p class="catalog-item-rate">Рейтинг: 8,9</p>
       </li>
-      <li>
+      <li class="catalog-item">
         <a href="">
           <h3>Villas At Poco Diablo</h3>
         </a>
-        <a href="">
+        <a class="catalog-item-image" href="">
           <img src="img/hotel-3.jpg" width="135" height="90" alt="Villas At Poco Diablo">
         </a>
-        <p>Апартаменты</p>
-        <p>От 2000 р.</p>
+        <p class="catalog-item-type">Апартаменты</p>
+        <p class="catalog-item-price">От 2000 р.</p>
         <p>
-          <a href="">Подробнее</a>
-          <a href="">Забронировать</a>
+          <a class="button button-detail" href="">Подробнее</a>
+          <a class="button button-booking" href="">Забронировать</a>
         </p>
         <p>2 звезды</p>
-        <p>Рейтинг: 9,2</p>
+        <p class="catalog-item-rate">Рейтинг: 9,2</p>
       </li>
     </ul>
   </section>
 </main>
 
-<footer>
-  <section>
-    <h2>Контакты</h2>
-    <p>
-      #Visitsedona<br>
-      Тел: <a href="tel:+74956660166">+7(495) 666-01-66</a>
+<footer class="page-footer main-footer">
+  <div class="container">
+    <section class="footer-contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="footer-contacts-info">
+        #Visitsedona<br>
+        Тел: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
+      </p>
+      <ul>
+        <li>
+          <a class="social-button" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <p class="footer-copyright">
+      Website by:
+      <a href="https://htmlacademy.ru">
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Академии">
+      </a>
     </p>
-    <ul>
-      <li>
-        <a href="#">Твиттер</a>
-      </li>
-      <li>
-        <a href="#">Фейсбук</a>
-      </li>
-      <li>
-        <a href="#">Ютуб</a>
-      </li>
-    </ul>
-  </section>
-  <p>
-    Website by:
-    <a href="https://htmlacademy.ru">
-      <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Академии">
-    </a>
-  </p>
+  </div>
 </footer>
 
 </body>
