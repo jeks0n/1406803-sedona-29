@@ -346,7 +346,7 @@ img {
   list-style: none;
 }
 
-.sort-list-type {
+.sort-type-list {
   list-style: none;
 }
 
@@ -387,6 +387,10 @@ img {
 }
 
 /* Catalog */
+
+.catalog-list {
+  list-style: none;
+}
 
 .catalog-item h3 {
   color: var(--basic-black);
