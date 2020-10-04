@@ -90,18 +90,24 @@ img {
   overflow: hidden;
 }
 
-/* Container */
+/* Containers */
 
-.container {
+.main-container {
   width: 1200px;
   margin: 0 auto;
   background-color: var(--basic-white);
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 5px 15px var(--shadow-gray-transparent);
 }
+
+.inner-container {
+  width: 1054px;
+  margin: 0 auto;
+}
+
 
 /* Grid */
 
-.page-body {
+.page-body .main-container {
   min-height: 100vh;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -352,40 +358,6 @@ img {
   background-color: var(--basic-blue-darkest);
 }
 
-/** Detail button **/
-
-.button-detail {
-  width: 110px;
-  min-height: 27px;
-  background-color: var(--basic-blue);
-}
-
-.button-detail:hover {
-  background-color: var(--basic-blue-dark);
-}
-
-.button-detail:focus {
-  color: var(--basic-white-super-transparent);
-  background-color: var(--basic-blue-darkest);
-}
-
-/** Booking button**/
-
-.button-booking {
-  width: 458px;
-  min-height: 58px;
-  background-color: var(--basic-brown);
-}
-
-.button-booking:hover {
-  background-color: var(--basic-brown-dark);
-}
-
-.button-booking:focus {
-  color: var(--basic-white-super-transparent);
-  background-color: var(--basic-brown-darkest);
-}
-
 /* Contacts */
 
 .contacts-phone {
@@ -446,6 +418,7 @@ img {
   text-align: center;
   margin-left: 110px;
   padding: 0;
+  font-size: 21px;
   font-weight: 700;
   line-height: 26px;
 }
@@ -476,10 +449,58 @@ img {
   line-height: 26px;
 }
 
-/** Hotel sort **/
+.footer-copyright a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+/* Hotel filter */
+
+.filters {
+  text-align: center;
+  background-image: url('../img/inner-page-background.jpg');
+  color: var(--basic-white);
+  min-height: 217px;
+}
+
+.filter-form {
+  display: grid;
+  grid-template-columns: 1fr 2fr min-content;
+}
+
+.fieldset-infrastructure {
+  grid-column: 1 / 2;
+  justify-self: left;
+}
+
+.fieldset-type-of-housing {
+  grid-column: 2 / 3;
+  justify-self: left;
+}
+
+.filter-list {
+  list-style: none;
+}
+
+.filter-option-checkbox {
+  text-align: left;
+}
+
+.filter-cost {
+  width: 317px;
+  height: 100%;
+  border: 1px solid var(--basic-white);
+}
+
+/* Hotel sort */
 
 .inner-page {
   background-color: var(--basic-white);
+}
+
+.sort {
+  min-height: 87px;
 }
 
 .sort-list {
@@ -491,6 +512,7 @@ img {
 }
 
 .sort-text-main {
+  font-size: 21px;
   font-weight: 700;
   line-height: 26px;
 }
@@ -529,21 +551,118 @@ img {
 /* Catalog */
 
 .catalog-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-rows: 150px;
+  border-top: 1px solid var(--basic-gray-lightest);
   list-style: none;
+}
+
+.catalog-item-wrapper {
+  border-bottom: 1px solid var(--basic-gray-lightest);
+}
+
+.catalog-item {
+  display: grid;
+  grid-template-columns: 135px 139px 1fr 110px;
+  grid-template-rows: 30px 30px 30px;
+  padding: 30px 0;
+}
+
+.catalog-item-image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  width: 135px;
+  height: 90px;
+}
+
+.catalog-item-header {
+  grid-column:  2 / 4;
+  grid-row: 1 / 2;
 }
 
 .catalog-item h3 {
   color: var(--basic-black);
+  margin-top: -5px;
+  margin-left: 29px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
 }
 
+.catalog-item-type {
+  grid-column:  2 / 3;
+  grid-row: 2 / 3;
+  padding: 0;
+  margin: 0 0 0 29px;
+}
+
+.catalog-item-price {
+  grid-column:  3 / 4;
+  grid-row: 2 / 3;
+  padding: 0;
+  margin: 0 0 0 6px;
+}
+
+.catalog-item-stars {
+  margin-top: -5px;
+  padding: 0;
+  text-align: right;
+  grid-column:  4 / 5;
+  grid-row: 1 / 2;
+}
+
 .catalog-item-rate {
   text-align: center;
-  vertical-align: middle;
+  padding: 5px 0 0;
   width: 110px;
-  height: 27px;
+  min-height: 27px;
+  grid-column:  4 / 5;
+  grid-row: 3 / 4;
+  margin: 0;
   color: var(--basic-black-lightest);
   background-color: var(--basic-white-gray);
+}
+
+/** Detail button **/
+
+.button-detail {
+  padding: 5px 0 0;
+  width: 110px;
+  min-height: 27px;
+  grid-column:  2 / 3;
+  grid-row: 3 / 4;
+  margin-left: 29px;
+  background-color: var(--basic-blue);
+}
+
+.button-detail:hover {
+  background-color: var(--basic-blue-dark);
+}
+
+.button-detail:focus {
+  color: var(--basic-white-super-transparent);
+  background-color: var(--basic-blue-darkest);
+}
+
+/** Booking button**/
+
+.button-booking {
+  padding: 5px 0 0;
+  margin-left: 6px;
+  width: 142px;
+  min-height: 27px;
+  grid-column:  3 / 4;
+  grid-row: 3 / 4;
+  background-color: var(--basic-brown);
+}
+
+.button-booking:hover {
+  background-color: var(--basic-brown-dark);
+}
+
+.button-booking:focus {
+  color: var(--basic-white-super-transparent);
+  background-color: var(--basic-brown-darkest);
 }
