@@ -56,7 +56,7 @@
 /* Global */
 
 .page-body {
-  min-width: 1280px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -93,8 +93,12 @@ img {
 /* Containers */
 
 .main-container {
+  min-height: 100vh;
   width: 1200px;
   margin: 0 auto;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   background-color: var(--basic-white);
   box-shadow: 0px 5px 15px var(--shadow-gray-transparent);
 }
@@ -102,16 +106,6 @@ img {
 .inner-container {
   width: 1054px;
   margin: 0 auto;
-}
-
-
-/* Grid */
-
-.page-body .main-container {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
 }
 
 /* Main header */

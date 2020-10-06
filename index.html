@@ -19,13 +19,13 @@
       <div class="main-navigation-wrapper">
         <ul class="site-navigation">
           <li>
-            <a href="">Информация</a>
+            <a href="#">Информация</a>
           </li>
           <li>
-            <a href="">Фото и видео</a>
+            <a href="#">Фото и видео</a>
           </li>
           <li>
-            <a href="">Карта штата</a>
+            <a href="#">Карта штата</a>
           </li>
           <li>
             <a href="hotels.html">Гостиницы</a>
@@ -107,6 +107,29 @@
       <button type="button" class="button button-main-search">Поиск гостиницы в седоне</button>
     </section>
 
+    <section class="search visually-hidden">
+      <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
+      <form class="search-form" action="#" method="get">
+        <p class="search-item">
+          <label for="arrival-date">Дата заезда:</label>
+          <input type="text" id="arrival-date" value="24 апреля 2017">
+        </p>
+        <p class="search-item">
+          <label for="date-of-departure">Дата выезда:</label>
+          <input type="text" id="date-of-departure" value="04 июля 2017">
+        </p>
+        <p class="search-item">
+          <label for="adults">Взрослые:</label>
+          <input type="number" id="adults" name="adults" value="2">
+        </p>
+        <p class="search-item">
+          <label for="childrens">Дети:</label>
+          <input type="number" id="childrens" name="childrens" value="0">
+        </p>
+        <button type="submit" class="button button-search">Найти</button>
+      </form>
+    </section>
+
     <section class="map">
       <h2>Наши контакты</h2>
       <p>Здесь будет карта</p>
@@ -145,29 +168,6 @@
         </a>
       </p>
   </footer>
-
-  <section class="search">
-    <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
-    <form class="search-form" action="#" method="get">
-      <p class="search-item">
-        <label for="arrival-date">Дата заезда:</label>
-        <input type="text" id="arrival-date" value="24 апреля 2017">
-      </p>
-      <p class="search-item">
-        <label for="date-of-departure">Дата выезда:</label>
-        <input type="text" id="date-of-departure" value="04 июля 2017">
-      </p>
-      <p class="search-item">
-        <label for="adults">Взрослые:</label>
-        <input type="number" id="adults" name="adults" value="2">
-      </p>
-      <p class="search-item">
-        <label for="childrens">Дети:</label>
-        <input type="number" id="childrens" name="childrens" value="0">
-      </p>
-      <button type="submit" class="button button-search">Найти</button>
-    </form>
-  </section>
 
 </div>
 
