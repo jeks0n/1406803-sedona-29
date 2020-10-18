@@ -189,76 +189,23 @@ img {
 /* Greeting */
 
 .greeting {
-  position: relative;
   margin-top: -23px;
+  position: relative;
   height: 509px;
+  background-image:
+    url("../img/welcome-pattern.svg"),
+    url("../img/welcome.jpg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 
-.pattern-1 {
-  position: absolute;
-  bottom: 0;
-  height: 57px;
-  width: 600px;
-}
-
-.pattern-1::before {
-  content: '';
+.welcome-image {
   position: absolute;
   top: 0;
   left: 0;
-  border-top: 57px solid transparent;
-  border-left: 600px solid white;
-}
-
-.pattern-2 {
-  position: absolute;
-  left: 250px;
-  bottom: 0;
-  height: 57px;
-  width: 350px;
-}
-
-.pattern-2::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-top: 57px solid transparent;
-  border-left: 350px solid white;
-}
-
-.pattern-3 {
-  position: absolute;
-  left: 600px;
-  bottom: 0;
-  height: 57px;
-  width: 350px;
-}
-
-.pattern-3::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-top: 57px solid transparent;
-  border-right: 350px solid white;
-}
-
-.pattern-4 {
-  position: absolute;
-  left: 600px;
-  bottom: 0;
-  height: 57px;
-  width: 600px;
-}
-
-.pattern-4::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-top: 57px solid transparent;
-  border-right: 600px solid white;
+  right: 0;
+  bottom: 4px;
+  margin: auto;
 }
 
 /* Features */
@@ -298,7 +245,7 @@ img {
   text-align: center;
 }
 
-.feature-item h3 {
+.feature-item-header {
   width: 149px;
   font-size: 21px;
   line-height: 21px;
@@ -401,54 +348,33 @@ img {
   min-height: 43px;
 }
 
-.feature-detail-item-header-1::before {
-  content: '';
-  width: 72px;
-  height: 72px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  background-image: url("../img/icons/house.svg");
-  background-repeat: no-repeat;
-}
-
-.feature-detail-item-header-1 {
+.feature-detail-item-header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.feature-detail-item-header-2::before {
+.feature-detail-item-header::before {
   content: '';
   width: 72px;
   height: 72px;
   margin-top: 10px;
   margin-bottom: 30px;
+  background-repeat: no-repeat;
+}
+
+.feature-detail-item-header-house::before {
+  background-image: url("../img/icons/house.svg");
+}
+
+.feature-detail-item-header-food::before {
   background-image: url("../img/icons/food.svg");
   background-size: 70px 72px;
-  background-repeat: no-repeat;
 }
 
-.feature-detail-item-header-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.feature-detail-item-header-3::before {
-  content: '';
-  width: 72px;
-  height: 72px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+.feature-detail-item-header-gift::before {
   background-image: url("../img/icons/gift.svg");
   background-size: 66px 72px;
-  background-repeat: no-repeat;
-}
-
-.feature-detail-item-header-3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* Hotel search */
