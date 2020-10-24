@@ -247,7 +247,7 @@ img {
 }
 
 .feature-item-header {
-  width: 149px;
+  width: 155px;
   font-size: 21px;
   line-height: 21px;
   margin: 47px auto 0;
@@ -403,6 +403,7 @@ img {
 
 .button {
   font: inherit;
+  font-weight: 700;
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
@@ -829,7 +830,7 @@ img {
 
 .range-controls {
   position: relative;
-  height: 21px;
+  height: 20px;
   margin-bottom: 15px;
   padding-top: 19px;
   background-color: transparent;
@@ -888,9 +889,11 @@ img {
 .button-filter {
   min-height: 36px;
   width: 137px;
-  margin-left: -10px;
+  margin-left: -13px;
+  font-weight: 400;
   background-color: transparent;
   border: 2px solid var(--basic-white);
+  border-radius: 2px;
   cursor: pointer;
 }
 
@@ -1065,14 +1068,14 @@ img {
   grid-column:  2 / 3;
   grid-row: 2 / 3;
   padding: 0;
-  margin: 0 0 0 29px;
+  margin: -3px 0 0 29px;
 }
 
 .catalog-item-price {
   grid-column:  3 / 4;
   grid-row: 2 / 3;
   padding: 0;
-  margin: 0 0 0 6px;
+  margin: -3px 0 0 6px;
 }
 
 .catalog-item-stars {
@@ -1083,32 +1086,29 @@ img {
   justify-self: right;
   grid-column:  4 / 5;
   grid-row: 1 / 2;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-repeat: space;
+  background-image: url("../img/icons/star.svg");
 }
 
 .catalog-item-stars-5 {
   width: 115px;
-  background-image: url("../img/icons/stars-5.svg");
 }
 
 .catalog-item-stars-4 {
   width: 90px;
-  background-image: url("../img/icons/stars-4.svg");
 }
 
 .catalog-item-stars-3 {
   width: 65px;
-  background-image: url("../img/icons/stars-3.svg");
 }
 
 .catalog-item-stars-2 {
   width: 40px;
-  background-image: url("../img/icons/stars-2.svg");
 }
 
 .catalog-item-stars-1 {
   width: 20px;
-  background-image: url("../img/icons/stars-1.svg");
 }
 
 .catalog-item-rate {
@@ -1127,12 +1127,12 @@ img {
 /** Detail button **/
 
 .button-detail {
-  padding: 5px 0 0;
+  padding: 3px 0 0;
   width: 110px;
-  min-height: 27px;
+  min-height: 24px;
   grid-column:  2 / 3;
   grid-row: 3 / 4;
-  margin-left: 29px;
+  margin: 3px 0 auto 29px;
   background-color: var(--basic-blue);
 }
 
@@ -1148,10 +1148,10 @@ img {
 /** Booking button **/
 
 .button-booking {
-  padding: 5px 0 0;
-  margin-left: 6px;
+  padding: 3px 0 0;
+  margin: 3px 0 auto 5px;
   width: 142px;
-  min-height: 27px;
+  min-height: 24px;
   grid-column:  3 / 4;
   grid-row: 3 / 4;
   background-color: var(--basic-brown);
