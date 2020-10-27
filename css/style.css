@@ -382,6 +382,8 @@ img {
 
 .hotel-search {
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hotel-search-text-main {
@@ -608,6 +610,17 @@ img {
   height: 594px;
 }
 
+.map-inner {
+  position: relative;
+}
+
+.map-inner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 /* Main footer */
 
 .main-footer {
@@ -615,6 +628,7 @@ img {
   display: grid;
   grid-template-columns: 2fr 1fr;
   background-color: var(--basic-white-transparent);
+  z-index: 1;
 }
 
 .footer-contacts {
@@ -1086,7 +1100,6 @@ img {
   justify-self: right;
   grid-column:  4 / 5;
   grid-row: 1 / 2;
-  background-repeat: repeat-x;
   background-repeat: space;
   background-image: url("../img/icons/star.svg");
 }
