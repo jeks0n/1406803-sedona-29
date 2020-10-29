@@ -872,19 +872,20 @@ img {
   position: absolute;
   top: 10px;
   left: 0;
-  width: 3px;
-  height: 3px;
-  padding: 0;
-  border: 8px solid var(--basic-white);
-  background-color: var(--basic-white-super-transparent);
+  padding: 1px;
+  width: 1px;
+  height: 1px;
+  box-sizing: content-box;
+  border: solid 8px var(--basic-white);
   border-radius: 50%;
+  background: var(--basic-white-super-transparent);
   cursor: pointer;
 }
 
 .range-controls .toggle:hover {
-  width: 4px;
-  height: 4px;
-  top: 9px;
+  top: 8px;
+  width: 2px;
+  height: 2px;
   border: 9px solid var(--basic-white);
 }
 

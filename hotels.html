@@ -40,7 +40,7 @@
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтр жилья</h2>
-      <form class="filter-form inner-container" method="get" action="#">
+      <form class="filter-form inner-container" method="get" action="https://echo.htmlacademy.ru/">
         <fieldset class="filter-form-fieldset filter-form-fieldset-list fieldset-infrastructure">
           <legend class="fieldset-infrastructure">Инфраструктура:</legend>
           <ul class="filter-list">
@@ -80,9 +80,9 @@
           <div class="range-filter">
             <div class="price-controls">
               <input id="min-price" type="text" name="min-price" value="от 0">
-              <label for="min-price" class="visually-hidden">от 0</label>
+              <label for="min-price" class="visually-hidden">Стоимость от</label>
               <input id="max-price" type="text" name="max-price" value="до 3000">
-              <label for="max-price" class="visually-hidden">до 3000</label>
+              <label for="max-price" class="visually-hidden">Стоимость до</label>
             </div>
             <div class="range-controls">
               <div class="scale">
@@ -90,16 +90,16 @@
                   width: 75%;
                 "></div>
               </div>
-              <div class="toggle toggle-min" tabindex="0"
+              <button type="button" class="toggle toggle-min" aria-label="Ползунок минимальной стоимости"
                 style="left: 0"
                 onmouseover="this.style.left='-2px';this.style.top='9px'"
                 onmouseout="this.style.left='0';this.style.top='10px';"
-              ></div>
-              <div class="toggle toggle-max" tabindex="0"
+              ></button>
+              <button type="button" class="toggle toggle-max" aria-label="Ползунок максимальной стоимости"
                  style="left: 252px"
                  onmouseover="this.style.left='250px';this.style.top='9px'"
                  onmouseout="this.style.left='252px';this.style.top='10px';"
-              ></div>
+              ></button>
             </div>
             <button type="submit" class="button button-filter">Показать</button>
           </div>
