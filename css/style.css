@@ -211,6 +211,11 @@ img {
 
 /* Features */
 
+.features {
+  position: relative;
+  z-index: 2;
+}
+
 .features-header-wrapper {
   text-align: center;
   min-height: 216px;
@@ -386,6 +391,13 @@ img {
   z-index: 1;
 }
 
+.hotel-search-wrapper {
+  background-color: var(--basic-white);
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
 .hotel-search-text-main {
   margin: 58px auto 0;
   font-size: 30px;
@@ -423,6 +435,7 @@ img {
   font-weight: 700;
   line-height: 26px;
   background-color: var(--basic-brown);
+  z-index: 2;
 }
 
 .button-main-search:hover {
@@ -464,24 +477,26 @@ img {
 
 .search-form {
   position: absolute;
+  top: -100%;
   left: 50%;
   margin-left: -284px;
   background-color: var(--basic-white);
   min-height: 395px;
   width: 568px;
   box-shadow: 0 7px 15px var(--shadow-gray-light-transparent);
+  z-index: 1;
 }
 
 .search-form-inactive {
-  transform: translateY(-100%);
-  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-  transition: all 0.5s ease-out;
+  top: -100%;
+  visibility: hidden;
+  transition: all 0.6s ease-out;
 }
 
 .search-form-active {
-  transform: translateY(0%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  transition: all 0.5s ease-out;
+  top: 100%;
+  visibility: visible;
+  transition: all 0.6s ease-out;
 }
 
 .form-container {

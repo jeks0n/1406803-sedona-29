@@ -31,10 +31,15 @@ buttonMainSearch.addEventListener('click', function (evt) {
     return searchForm.classList.add(searchFormClassInactive);
   }
 
-  arrivalDate.focus();
+
   searchForm.classList.remove(searchFormClassInactive);
   searchForm.classList.add(searchFormClassActive);
+  arrivalDate.focus();
 });
+
+searchForm.addEventListener("transitionend", function(e){
+  arrivalDate.focus();
+}, false);
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
