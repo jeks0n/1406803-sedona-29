@@ -31,6 +31,7 @@ buttonMainSearch.addEventListener('click', function (evt) {
     return searchForm.classList.add(searchFormClassInactive);
   }
 
+  arrivalDate.focus();
   searchForm.classList.remove(searchFormClassInactive);
   searchForm.classList.add(searchFormClassActive);
 });
