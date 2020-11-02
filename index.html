@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -105,28 +105,28 @@
       <p class="hotel-search-text-main">Заинтересовались?</p>
       <p class="hotel-search-text-secondary">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button type="button" class="button button-main-search">Поиск гостиницы в седоне</button>
-      <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="search-form search-form-inactive" action="https://echo.htmlacademy.ru/" method="get">
         <div class="form-container">
           <p class="search-item">
             <label for="arrival-date">Дата заезда:</label>
-            <input type="text" id="arrival-date" name="arrival-date" value="24 апреля 2017">
+            <input type="text" id="arrival-date" name="arrival-date" value="24 апреля 2017" required>
             <button type="button" class="button-control button-calendar" aria-label="Календарь"></button>
           </p>
           <p class="search-item">
             <label for="date-of-departure">Дата выезда:</label>
-            <input type="text" id="date-of-departure" name="date-of-departure" value="4 июля 2017">
+            <input type="text" id="date-of-departure" name="date-of-departure" value="4 июля 2017" required>
             <button type="button" class="button-control button-calendar" aria-label="Календарь"></button>
           </p>
           <p class="search-item search-item-small">
             <label for="adults">Взрослые:</label>
             <button type="button" class="button-control button-minus" aria-label="Минус один"></button>
-            <input type="text" class="search-item-input-number" id="adults" name="adults" value="2">
+            <input type="text" class="search-item-input-number" id="adults" name="adults" value="2" required>
             <button type="button" class="button-control button-plus" aria-label="Плюс один"></button>
           </p>
           <p class="search-item search-item-small">
             <label for="children" class="search-item-small-special">Дети:</label>
             <button type="button" class="button-control button-minus" aria-label="Минус один"></button>
-            <input type="text" id="children" name="children" value="0">
+            <input type="text" id="children" name="children" value="0" required>
             <button type="button" class="button-control button-plus" aria-label="Плюс один"></button>
           </p>
         </div>
@@ -180,6 +180,8 @@
   </footer>
 
 </div>
+
+<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>

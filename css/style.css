@@ -61,7 +61,7 @@
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -194,8 +194,8 @@ img {
   position: relative;
   height: 509px;
   background-image:
-    url("../img/welcome-pattern.svg"),
-    url("../img/welcome.jpg");
+    url('../img/welcome-pattern.svg'),
+    url('../img/welcome.jpg');
   background-repeat: no-repeat;
   background-position-y: bottom;
 }
@@ -287,7 +287,7 @@ img {
 .feature-item-main-left {
   display: grid;
   grid-template-areas:
-    "item image image";
+    'item image image';
 }
 
 .feature-item-main-left .feature-item {
@@ -301,7 +301,7 @@ img {
 .feature-item-main-right {
   display: grid;
   grid-template-areas:
-    "image image item";
+    'image image item';
 }
 
 .feature-item-main-right .feature-item {
@@ -365,16 +365,16 @@ img {
 }
 
 .feature-detail-item-header-house::before {
-  background-image: url("../img/icons/house.svg");
+  background-image: url('../img/icons/house.svg');
 }
 
 .feature-detail-item-header-food::before {
-  background-image: url("../img/icons/food.svg");
+  background-image: url('../img/icons/food.svg');
   background-size: 70px 72px;
 }
 
 .feature-detail-item-header-gift::before {
-  background-image: url("../img/icons/gift.svg");
+  background-image: url('../img/icons/gift.svg');
   background-size: 66px 72px;
 }
 
@@ -472,6 +472,18 @@ img {
   box-shadow: 0 7px 15px var(--shadow-gray-light-transparent);
 }
 
+.search-form-inactive {
+  transform: translateY(-100%);
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  transition: all 0.5s ease-out;
+}
+
+.search-form-active {
+  transform: translateY(0%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  transition: all 0.5s ease-out;
+}
+
 .form-container {
   display: flex;
   flex-wrap: wrap;
@@ -524,18 +536,18 @@ img {
 
 .button-calendar {
   margin-left: -40px;
-  background-image: url("../img/icons/calendar.svg");
+  background-image: url('../img/icons/calendar.svg');
   background-repeat: no-repeat;
   background-size: 21px 23px;
   background-position: 8px 7px;
 }
 
 .button-calendar:hover {
-  background-image: url("../img/icons/calendar-black.svg");
+  background-image: url('../img/icons/calendar-black.svg');
 }
 
 .button-calendar:focus {
-  background-image: url("../img/icons/calendar-blue.svg");
+  background-image: url('../img/icons/calendar-blue.svg');
 }
 
 .search-item-small input {
@@ -709,7 +721,7 @@ img {
 .filters {
   margin-top: -23px;
   text-align: center;
-  background-image: url("../img/inner-page-background.jpg");
+  background-image: url('../img/inner-page-background.jpg');
   color: var(--basic-white);
   min-height: 217px;
 }
@@ -784,29 +796,29 @@ img {
   top: 0;
   width: 23px;
   height: 23px;
-  background-image: url("../img/icons/checkbox-off.svg");
+  background-image: url('../img/icons/checkbox-off.svg');
   background-size: 23px 23px;
   background-repeat: no-repeat;
   background-position: left top;
 }
 
 .filter-input-checkbox:not(:checked) + label::after {
-  background-image: url("../img/icons/checkbox-off.svg");
+  background-image: url('../img/icons/checkbox-off.svg');
 }
 
 .filter-input-checkbox[disabled]:not(:checked) + label::after {
-  background-image: url("../img/icons/checkbox-off-disabled.svg");
+  background-image: url('../img/icons/checkbox-off-disabled.svg');
 }
 
 .filter-input-checkbox:checked + label::after {
   width: 27px;
   height: 23px;
   background-size: 27px 23px;
-  background-image: url("../img/icons/checkbox-on.svg");
+  background-image: url('../img/icons/checkbox-on.svg');
 }
 
 .filter-input-checkbox[disabled]:checked + label::after {
-  background-image: url("../img/icons/checkbox-on-disabled.svg");
+  background-image: url('../img/icons/checkbox-on-disabled.svg');
 }
 
 .filter-input:focus + label::after {
@@ -1105,7 +1117,7 @@ img {
   grid-column:  5 / 6;
   grid-row: 1 / 2;
   background-repeat: space;
-  background-image: url("../img/icons/star.svg");
+  background-image: url('../img/icons/star.svg');
 }
 
 .catalog-item-stars-5 {
