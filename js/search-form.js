@@ -23,6 +23,9 @@ if (localStorageAdults || localStorageChildren)  {
   children.value = localStorageChildren;
 }
 
+searchForm.classList.remove(searchFormClassActive);
+searchForm.classList.add(searchFormClassInactive);
+
 buttonMainSearch.addEventListener('click', function (evt) {
   evt.preventDefault();
 
@@ -30,7 +33,6 @@ buttonMainSearch.addEventListener('click', function (evt) {
     searchForm.classList.remove(searchFormClassActive);
     return searchForm.classList.add(searchFormClassInactive);
   }
-
 
   searchForm.classList.remove(searchFormClassInactive);
   searchForm.classList.add(searchFormClassActive);

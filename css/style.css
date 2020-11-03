@@ -152,12 +152,12 @@ img {
   background-color: var(--basic-white);
   margin-top: 15px;
   flex-basis: 210px;
+  text-align: left;
 }
 
 .site-navigation li:nth-child(2) {
   margin-right: auto;
   margin-left: 18px;
-  max-width: 200px;
 }
 
 .site-navigation li:nth-child(3) {
@@ -193,6 +193,7 @@ img {
   margin-top: -23px;
   position: relative;
   height: 509px;
+  background-color: var(--basic-white);
   background-image:
     url('../img/welcome-pattern.svg'),
     url('../img/welcome.jpg');
